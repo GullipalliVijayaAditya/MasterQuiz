@@ -34,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
     private ProgressDialog progressDialog;
     private TextView forgotPassword;
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,6 +82,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
+
+
 
     private void validate(String userName, String userPassword) {
 

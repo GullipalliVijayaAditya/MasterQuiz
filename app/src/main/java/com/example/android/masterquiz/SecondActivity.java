@@ -24,7 +24,7 @@ import com.google.firebase.database.ValueEventListener;
 public class SecondActivity extends AppCompatActivity {
 
     private FirebaseAuth firebaseAuth;
-    private Button logout;
+    private Button logoutMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,21 +33,20 @@ public class SecondActivity extends AppCompatActivity {
 
         firebaseAuth = FirebaseAuth.getInstance();
 
-        logout = (Button)findViewById(R.id.btnLogout);
+        logoutMenu = (Button)findViewById(R.id.btnLogout);
 
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Logout();
-            }
-        });
+
     }
-
-    private void Logout(){
-        firebaseAuth.signOut();
+        private void logout() {
+        FirebaseAuth.getInstance().signOut();
+        Intent intent = new Intent(SecondActivity.this, MainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
         finish();
-        startActivity(new Intent(SecondActivity.this, MainActivity.class));
     }
+
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -55,15 +54,14 @@ public class SecondActivity extends AppCompatActivity {
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
 
-        switch(item.getItemId()){
-            case R.id.logoutMenu:{
-                Logout();
-            }
-            case R.id.profileMenu:
-                startActivity(new Intent(SecondActivity.this, ProfileActivity.class));
+
+ @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.logoutMenu) {
+            logout();
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }
