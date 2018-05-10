@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "962940116116",
+    "firebase_url": "https://masterquiz-60826.firebaseio.com",
+    "project_id": "masterquiz-60826",
+    "storage_bucket": "masterquiz-60826.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962940116116:android:f76339f17c9c6ad4",
+        "android_client_info": {
+          "package_name": "com.example.android.masterquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962940116116-f991v589gkda90m8pjv73qeokmo75odv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAedrc53EaJV4vKLqSdDTO-u4blM-cueiI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
