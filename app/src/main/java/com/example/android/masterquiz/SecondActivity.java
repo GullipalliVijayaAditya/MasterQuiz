@@ -33,7 +33,7 @@ public class SecondActivity extends AppCompatActivity {
 
         firebaseAuth = FirebaseAuth.getInstance();
 
-        logoutMenu = (Button)findViewById(R.id.btnLogout);
+
 
 
     }
@@ -46,14 +46,11 @@ public class SecondActivity extends AppCompatActivity {
     }
 
 
-
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu, menu);
         return true;
     }
-
 
 
  @Override
@@ -62,7 +59,15 @@ public class SecondActivity extends AppCompatActivity {
         if (id == R.id.logoutMenu) {
             logout();
             return true;
+
         }
-        return super.onOptionsItemSelected(item);
+
+      return super.onOptionsItemSelected(item);
+
     }
-}
+
+    }
+
+
+
+

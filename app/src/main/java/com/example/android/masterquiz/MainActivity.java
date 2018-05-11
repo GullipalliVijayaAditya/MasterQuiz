@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
                     checkEmailVerification();
                 }else{
-                    Toast.makeText(MainActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Wrong Details", Toast.LENGTH_SHORT).show();
                     counter--;
                     Info.setText("No of attempts remaining: " + counter);
                     progressDialog.dismiss();
