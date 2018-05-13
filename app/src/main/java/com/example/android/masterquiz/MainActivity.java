@@ -95,10 +95,13 @@ public class MainActivity extends AppCompatActivity {
         firebaseAuth.signInWithEmailAndPassword(userName, userPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
+
                 if(task.isSuccessful()){
                     progressDialog.dismiss();
-                    Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
+
+
                     checkEmailVerification();
+
                 }else{
                     Toast.makeText(MainActivity.this, "Wrong Details", Toast.LENGTH_SHORT).show();
                     counter--;
@@ -118,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
         FirebaseUser firebaseUser = firebaseAuth.getInstance().getCurrentUser();
         Boolean emailflag = firebaseUser.isEmailVerified();
 
-        startActivity(new Intent(MainActivity.this, com.example.android.masterquiz.SecondActivity.class));
+
 
        if(emailflag){
            finish();
