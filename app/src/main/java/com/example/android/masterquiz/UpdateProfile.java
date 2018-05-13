@@ -28,10 +28,10 @@ public class UpdateProfile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_profile);
 
-        newUserName = findViewById(R.id.name_loginUpdate);
-        newUserEmail = findViewById(R.id.etEmailUpdate);
-        newUserAge = findViewById(R.id.etAgeUpdate);
-        save = findViewById(R.id.btnSave);
+        newUserName = findViewById(R.id.text_username__Updateprofile);
+        newUserEmail = findViewById(R.id.text_email_Updateprofile);
+        newUserAge = findViewById(R.id.text_age_Updateprofile);
+        save = findViewById(R.id.button_save_Updateprofile);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

@@ -7,7 +7,7 @@
     tools:context=".UpdateProfile">
 
     <ImageView
-        android:id="@+id/ivProfileUpdate"
+        android:id="@+id/profile_pic_Updateprofile"
         android:layout_width="110dp"
         android:layout_height="110dp"
         android:layout_marginBottom="8dp"
@@ -22,7 +22,7 @@
         app:srcCompat="@mipmap/ic_launcher" />
 
     <EditText
-        android:id="@+id/name_loginUpdate"
+        android:id="@+id/text_username__Updateprofile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -36,11 +36,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivProfileUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/profile_pic_Updateprofile"
         app:layout_constraintVertical_bias="0.048" />
 
     <EditText
-        android:id="@+id/etEmailUpdate"
+        android:id="@+id/text_email_Updateprofile"
         android:layout_width="222dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -53,11 +53,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name_loginUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/text_username__Updateprofile"
         app:layout_constraintVertical_bias="0.07" />
 
     <EditText
-        android:id="@+id/etAgeUpdate"
+        android:id="@+id/text_age_Updateprofile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -71,11 +71,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etEmailUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/text_email_Updateprofile"
         app:layout_constraintVertical_bias="0.116" />
 
     <Button
-        android:id="@+id/btnSave"
+        android:id="@+id/button_save_Updateprofile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -86,7 +86,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etAgeUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/text_age_Updateprofile"
         app:layout_constraintVertical_bias="0.218" />
 
 </android.support.constraint.ConstraintLayout>

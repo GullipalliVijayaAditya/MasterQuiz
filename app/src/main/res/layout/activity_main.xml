@@ -7,13 +7,13 @@
     tools:context=".MainActivity">
 
 
-    <EditText
-        android:id="@+id/name_login"
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/text_username_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
        android:layout_marginHorizontal="20dp"
         android:ems="10"
-        android:hint="Name"
+        android:hint="Email"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
@@ -22,8 +22,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.245" />
 
-    <EditText
-        android:id="@+id/etPassword"
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/text_password_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
@@ -35,11 +35,11 @@
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name_login"
+        app:layout_constraintTop_toBottomOf="@+id/text_username_login"
         app:layout_constraintVertical_bias="0.093" />
 
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/button_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -50,11 +50,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        app:layout_constraintTop_toBottomOf="@+id/text_password_login"
         app:layout_constraintVertical_bias="0.154" />
 
     <TextView
-        android:id="@+id/tvInfo"
+        android:id="@+id/text_noofatempts_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -65,11 +65,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/button_login"
         app:layout_constraintVertical_bias="0.344" />
 
     <TextView
-        android:id="@+id/tvRegister"
+        android:id="@+id/text_new_register_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -82,11 +82,11 @@
         app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvInfo"
+        app:layout_constraintTop_toBottomOf="@+id/text_noofatempts_login"
         app:layout_constraintVertical_bias="0.379" />
 
     <TextView
-        android:id="@+id/tvForgotPassword"
+        android:id="@+id/text_forget_password_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -94,9 +94,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Forgot Password?"
-        app:layout_constraintBottom_toTopOf="@+id/tvInfo"
+        app:layout_constraintBottom_toTopOf="@+id/text_noofatempts_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/button_login" />
 
 </android.support.constraint.ConstraintLayout>

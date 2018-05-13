@@ -21,7 +21,7 @@ import com.google.firebase.database.ValueEventListener;
 public class ProfileActivity extends AppCompatActivity {
 
     private ImageView profilePic;
-    private TextView profileName, profileAge, profileEmail;
+    private TextView profileName, profileAge, profileEmail,  profilePassword;
     private Button profileUpdate, changePassword;
     private FirebaseAuth firebaseAuth;
     private FirebaseDatabase firebaseDatabase;
@@ -31,12 +31,13 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        profilePic = findViewById(R.id.ivProfilePic);
-        profileName = findViewById(R.id.tvProfileName);
-        profileAge = findViewById(R.id.tvProfileAge);
-        profileEmail = findViewById(R.id.tvProfileEmail);
-        profileUpdate = findViewById(R.id.btnProfileUpdate);
-        changePassword = findViewById(R.id.btnChangePassword);
+        profilePic = findViewById(R.id.profile_pic_profile);
+        profileName = findViewById(R.id.text_profilename_profile);
+        profileAge = findViewById(R.id.text_age_profile);
+        profileEmail = findViewById(R.id.text_email_profile);
+        profileUpdate = findViewById(R.id.button_updateprofile_profile);
+        profilePassword = findViewById(R.id.text_password_login);
+        changePassword = findViewById(R.id.button_changepassword_profile);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -52,6 +53,7 @@ public class ProfileActivity extends AppCompatActivity {
                 profileName.setText("Name: " + userProfile.getUserName());
                 profileAge.setText("Age: " + userProfile.getUserAge());
                 profileEmail.setText("Email: " + userProfile.getUserEmail());
+                profilePassword.setText("Password: " +userProfile.getUserPassword());
             }
 
             @Override

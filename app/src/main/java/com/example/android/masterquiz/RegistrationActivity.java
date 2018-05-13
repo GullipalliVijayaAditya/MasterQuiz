@@ -20,6 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.rengwuxian.materialedittext.MaterialEditText;
 
 public class RegistrationActivity extends AppCompatActivity{
 
@@ -73,13 +74,13 @@ public class RegistrationActivity extends AppCompatActivity{
     }
 
     private void setupUIViews(){
-        userName = (EditText)findViewById(R.id.etUserName);
-        userPassword = (EditText)findViewById(R.id.etUserPassword);
-        userEmail = (EditText)findViewById(R.id.etUserEmail);
-        regButton = (Button)findViewById(R.id.btnRegister);
-        userLogin = (TextView)findViewById(R.id.tvUserLogin);
-        userAge = (EditText)findViewById(R.id.etAge);
-        userProfilePic = (ImageView)findViewById(R.id.ivProfile);
+        userName = (MaterialEditText)findViewById(R.id.text_username_registration);
+        userPassword = (MaterialEditText)findViewById(R.id.text_password_registration);
+        userEmail = (MaterialEditText)findViewById(R.id.text_email_registration);
+        regButton = (Button)findViewById(R.id.button_registration);
+        userLogin = (TextView)findViewById(R.id.text_alreadylogin_registration);
+        userAge = (MaterialEditText)findViewById(R.id.text_age_registration);
+        userProfilePic = (ImageView)findViewById(R.id.profile_pic_registration);
     }
 
     private Boolean validate(){

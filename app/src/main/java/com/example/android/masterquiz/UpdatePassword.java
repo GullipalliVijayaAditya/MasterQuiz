@@ -27,8 +27,8 @@ public class UpdatePassword extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_password);
 
-        update = findViewById(R.id.btnUpdatePassword);
-        newPassword = findViewById(R.id.etNewPassword);
+        update = findViewById(R.id.button_updatePassword);
+        newPassword = findViewById(R.id.text_newPassword_updatePassword);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

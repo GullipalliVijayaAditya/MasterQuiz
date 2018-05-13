@@ -13,6 +13,7 @@ import com.example.android.masterquiz.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.rengwuxian.materialedittext.MaterialEditText;
 
 public class PasswordActivity extends AppCompatActivity {
 
@@ -25,8 +26,8 @@ public class PasswordActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_password);
 
-        passwordEmail = (EditText)findViewById(R.id.etPasswordEmail);
-        resetPassword = (Button)findViewById(R.id.btnPasswordReset);
+        passwordEmail = (MaterialEditText)findViewById(R.id.text_email_password);
+        resetPassword = (Button)findViewById(R.id.button_reset_password);
         firebaseAuth = FirebaseAuth.getInstance();
 
         resetPassword.setOnClickListener(new View.OnClickListener() {

@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".RegistrationActivity">
 
-    <EditText
-        android:id="@+id/etUserName"
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/text_username_registration"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
@@ -21,8 +21,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.307" />
 
-    <EditText
-        android:id="@+id/etUserEmail"
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/text_email_registration"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
@@ -33,11 +33,11 @@
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etUserName"
+        app:layout_constraintTop_toBottomOf="@+id/text_username_registration"
         app:layout_constraintVertical_bias="0.013" />
 
-    <EditText
-        android:id="@+id/etUserPassword"
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/text_password_registration"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
@@ -48,11 +48,11 @@
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etUserEmail"
+        app:layout_constraintTop_toBottomOf="@+id/text_email_registration"
         app:layout_constraintVertical_bias="0.029" />
 
     <Button
-        android:id="@+id/btnRegister"
+        android:id="@+id/button_registration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -63,48 +63,48 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etUserPassword"
+        app:layout_constraintTop_toBottomOf="@+id/text_username_registration"
         app:layout_constraintVertical_bias="0.424" />
 
     <TextView
-        android:id="@+id/tvUserLogin"
+        android:id="@+id/text_alreadylogin_registration"
         android:layout_width="wrap_content"
         android:layout_height="33dp"
         android:layout_margin="20dp"
 
 
-        android:text="Already Signed in? Login"
+        android:text="Already Signed in ?  Login"
         android:textSize="22dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnRegister"
+        app:layout_constraintTop_toBottomOf="@+id/button_registration"
         app:layout_constraintVertical_bias="0.0" />
 
-    <EditText
-        android:id="@+id/etAge"
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/text_age_registration"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:hint="Age"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/btnRegister"
+        app:layout_constraintBottom_toTopOf="@+id/button_registration"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etUserPassword"
+        app:layout_constraintTop_toBottomOf="@+id/text_password_registration"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/ivProfile"
+        android:id="@+id/profile_pic_registration"
         android:layout_width="110dp"
         android:layout_height="110dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/etUserName"
+        app:layout_constraintBottom_toTopOf="@+id/text_username_registration"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

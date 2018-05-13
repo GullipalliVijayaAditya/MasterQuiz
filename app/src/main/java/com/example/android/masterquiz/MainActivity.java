@@ -19,6 +19,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.rengwuxian.materialedittext.MaterialEditText;
 
 import org.w3c.dom.Text;
 
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText Password;
     private TextView Info;
     private Button Login;
-    private int counter = 5;
+    private int counter = 3;
     private TextView userRegistration;
     private FirebaseAuth firebaseAuth;
     private ProgressDialog progressDialog;
@@ -42,14 +43,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Name = (EditText)findViewById(R.id.name_login);
-        Password = (EditText)findViewById(R.id.etPassword);
-        Info = (TextView)findViewById(R.id.tvInfo);
-        Login = (Button)findViewById(R.id.btnLogin);
-        userRegistration = (TextView)findViewById(R.id.tvRegister);
-        forgotPassword = (TextView)findViewById(R.id.tvForgotPassword);
+        Name = (MaterialEditText)findViewById(R.id.text_username_login);
+        Password = (MaterialEditText)findViewById(R.id.text_password_login);
+        Info = (TextView)findViewById(R.id.text_noofatempts_login);
+        Login = (Button)findViewById(R.id.button_login);
+        userRegistration = (TextView)findViewById(R.id.text_new_register_login);
+        forgotPassword = (TextView)findViewById(R.id.text_forget_password_login);
 
-        Info.setText("No of attempts remaining: 5");
+        Info.setText("No of attempts remaining: 3");
 
         firebaseAuth = FirebaseAuth.getInstance();
         progressDialog = new ProgressDialog(this);
